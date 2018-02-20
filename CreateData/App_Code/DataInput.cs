@@ -17,8 +17,7 @@ using System.Data.SqlClient;
 
             SqlParameter pdept_name = new SqlParameter("@dept_name", SqlDbType.VarChar);
             pdept_name.Value = objtest.Strdept_name;
-
-            
+                    
 
             SqlParameter pbuilding = new SqlParameter("@building", SqlDbType.VarChar);
             pbuilding.Value = objtest.Strbuilding;
