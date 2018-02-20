@@ -13,10 +13,7 @@ using System.Data.SqlClient;
         {
             string DBCon = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             string Deptproc = "Insert_Department";
-            string Stuproc = "Insert_Student";
-            string Courseproc = "Insert_course";
-
-            
+                      
 
             SqlParameter pdept_name = new SqlParameter("@dept_name", SqlDbType.VarChar);
             pdept_name.Value = objtest.Strdept_name;
