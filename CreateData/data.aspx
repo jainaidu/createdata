@@ -23,6 +23,13 @@
         .auto-style5 {
             width: 443px;
         }
+        .auto-style7 {
+            width: 100%;
+            background-color: #008080;
+        }
+        .auto-style8 {
+            width: 441px;
+        }
     </style>
 </head>
 <body>
@@ -62,10 +69,6 @@
         </table>
         <p>
             &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
         <table class="auto-style4">
             <tr>
                 <td>INSERT INSTRUCTOR DETAILS</td>
@@ -100,6 +103,45 @@
                 <td class="auto-style5">&nbsp;</td>
                 <td>
                     <asp:Button ID="txtsubmit1" runat="server" OnClick="txtsubmit1_Click" Text="SUBMIT" />
+                </td>
+            </tr>
+        </table>
+        <p>
+            &nbsp;</p>
+        <table class="auto-style7">
+            <tr>
+                <td>INSERT STUDENT DETAILS</td>
+            </tr>
+        </table>
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style8">STUDENT ID</td>
+                <td>
+                    <asp:TextBox ID="txts_id" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style8">STUDENT NAME</td>
+                <td>
+                    <asp:TextBox ID="txts_name" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style8">DEPARTMENT NAME</td>
+                <td>
+                    <asp:TextBox ID="txts_dept" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style8">TOTAL CREDITS</td>
+                <td>
+                    <asp:TextBox ID="txts_cred" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style8">&nbsp;</td>
+                <td>
+                    <asp:Button ID="txtsub" runat="server" Text="SUBMIT" />
                 </td>
             </tr>
         </table>
