@@ -85,4 +85,42 @@ using System.Data.SqlClient;
             }
         }
 
+        public static void saveStudent (DataVariables objStu)
+    {
+        string DBCon = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        string Stuproc = "Insert_Student";
+
+        SqlParameter ps_id = new SqlParameter("@S_ID", SqlDbType.VarChar);
+        ps_id.Value = objStu.Stus_id;
+
+        SqlParameter ps_name = new SqlParameter("@S_name", SqlDbType.VarChar);
+        ps_name.Value = objStu.Stus_name;
+
+        SqlParameter ps_dept = new SqlParameter("@dept_name", SqlDbType.VarChar);
+        ps_dept.Value = objStu.Strdept_name;
+
+        SqlParameter ps_credits = new SqlParameter("@tot_cred", SqlDbType.VarChar);
+        ps_credits.Value = objStu.Strcredits;
+
+        SqlConnection connect = new SqlConnection(DBCon);
+        try
+        {
+            connect.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = connect;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = Stuproc;
+            cmd.Parameters.Add(ps_id);
+            cmd.Parameters.Add(ps_name);
+            cmd.Parameters.Add(ps_dept);
+            cmd.Parameters.Add(ps_credits);
+            cmd.ExecuteNonQuery();
+        }
+        catch(Exception)
+        {
+            throw;
+        }
+    }
+
+        
     }
