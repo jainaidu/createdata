@@ -129,15 +129,6 @@ public partial class data {
     protected global::System.Web.UI.WebControls.TextBox txts_dept;
     
     /// <summary>
-    /// txts_cred control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox txts_cred;
-    
-    /// <summary>
     /// txtsub control.
     /// </summary>
     /// <remarks>

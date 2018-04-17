@@ -133,15 +133,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style8">TOTAL CREDITS</td>
-                <td>
-                    <asp:TextBox ID="txts_cred" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
                 <td class="auto-style8">&nbsp;</td>
                 <td>
-                    <asp:Button ID="txtsub" runat="server" Text="SUBMIT" />
+                    <asp:Button ID="txtsub" runat="server" OnClick="txtsub_Click" Text="SUBMIT" />
                 </td>
             </tr>
         </table>
