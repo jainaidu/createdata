@@ -14,7 +14,6 @@ class DataInput
         string DBCon = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
         string Deptproc = "Insert_Department";
 
-
         SqlParameter pdept_name = new SqlParameter("@dept_name", SqlDbType.VarChar);
         pdept_name.Value = objtest.Strdept_name;
 
