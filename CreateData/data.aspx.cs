@@ -35,4 +35,15 @@ using System.Web.UI.WebControls;
         DataInput.saveIns(objins);
         Response.Write("New Instructor is Created");
     }
+
+    protected void txtsub_Click(object sender, EventArgs e)
+    {
+        DataVariables objStu = new DataVariables();
+        objStu.Stus_id = txts_id.Text;
+        objStu.Stus_name = txts_name.Text;
+        objStu.Strdept_name = txts_dept.Text;
+
+        DataInput.saveStudent(objStu);
+        Response.Write("New Student is Created");
+    }
 }
